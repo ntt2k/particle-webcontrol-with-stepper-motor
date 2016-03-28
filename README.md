@@ -7,6 +7,7 @@ This simple app serves the purposes and provide abstraction to control stepper m
 
 Building backend with NodeJS v4.4.1 LTS & ExpressJS for simple front-end with HTML5/CSS/jQuery
 
+![Screenshot](screenshot/micro_controller.jpg)
 ![Screenshot](screenshot/screenshot1.png)
 
 
@@ -15,25 +16,11 @@ Project Goals
 
 + The stepper motor should have the capability to be controlled remotely using a cloud based architecture. This will involve building a REST server with cloud end-points that can be queried remotely. For example:
 
-(http://(ipaddress)/micro-controller
+  http://(ipaddress)/micro-controller
 
 + The server should also have the ability to receive scripted events for automation tasks:
 
-{
-  script_name: ‘name 1’,
-  control: [
-  {
-    Amount_opened: 50,
-    Start_time: 2016-04-02T12:10:10
-    Duration: 20
-  }
-  {
-    Amount_opened: 25,
-    Start_time: 2016-04-02T12:15:10
-    Duration: 15
-  }
-  ]
-}
+  ![Screenshot](screenshot/script.png)
 
 + A webcontrol that will allow access to turn the micro-controller on/off at different rates and at different levels. Parameters that are associated with micro-controller are:
   + Amount of percentage open (as with 100 being fully open and 0 being fully closed)
