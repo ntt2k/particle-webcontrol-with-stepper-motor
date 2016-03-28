@@ -1,0 +1,67 @@
+<head>
+
+<LINK href="/css/interface.css" rel="stylesheet" type="text/css" />
+<LINK href="/css/flat-ui.css" rel="stylesheet" type="text/css" />
+<link href="/css/switch.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="/js/interface.js"></script>
+
+<link href="/css/roundslider.css" rel="stylesheet" />
+<script src="/js/roundslider.js"></script>
+
+
+</head>
+
+<body>
+
+<div class="mainContainer">
+  <div class="title">Dashboard</div>
+
+  <div class="buttonBlock"><div class="buttonTitle">Water Fixture 1</div>
+      <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox"
+                            id="myonoffswitch" onClick="buttonClick(this.checked)">
+        <label class="onoffswitch-label" for="myonoffswitch">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+      </div>
+  </div>
+
+  <div class="buttonBlock"><div class="buttonTitle">Sensor Report</div>
+
+  <div class="display" id="openPercentageDisplay">Amount opened: 0%</div>
+  <div class="display" id="tempDisplay">Temperature: 0 F</div>
+  <div class="display" id="startTimeDisplay">Start time: </div>
+  <div class="display" id="durationDisplay">Duration: </div>
+
+  <div class="controlSlider" id="controlSlider"
+      onclick="openValve(controlSlider.getValue())"
+      onchange="openValve(controlSlider.getValue())"> Control open: </div>
+  <div class="display" >Water control</div>
+
+  <!-- <div id="main-graph" style="height: 250px;"></div> -->
+  </div>
+</div>
+
+<style>
+    .controlSlider {
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+</style>
+<script type="text/javascript">
+    $("#controlSlider").roundSlider({
+        sliderType: "min-range",
+        value: 0,
+        tooltipFormat: "percentOpenFormat"
+      });
+
+      function percentOpenFormat(args) {
+        return args.value + " %";
+      }
+
+</script>
+
+</body>
