@@ -20,19 +20,19 @@ Project Goals
 + The server should also have the ability to receive scripted events for automation tasks:
 
 {
-script_name: ‘name 1’,
-control: [
-	{
-		Amount_opened: 50,
-		Start_time: 2016-04-02T12:10:10
-		Duration: 20
-}
-{
-  Amount_opened: 25,
-  Start_time: 2016-04-02T12:15:10
-  Duration: 15
-}
-]
+  script_name: ‘name 1’,
+  control: [
+  {
+    Amount_opened: 50,
+    Start_time: 2016-04-02T12:10:10
+    Duration: 20
+  }
+  {
+    Amount_opened: 25,
+    Start_time: 2016-04-02T12:15:10
+    Duration: 15
+  }
+  ]
 }
 
 + A webcontrol that will allow access to turn the micro-controller on/off at different rates and at different levels. Parameters that are associated with micro-controller are:
