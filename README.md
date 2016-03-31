@@ -38,6 +38,9 @@ https://docs.particle.io/guide/getting-started/intro/photon/
 Version History
 ---------------
 
+v0.12b:
+  + Added video in 'screenshot' folder
+
 v0.12:
   + Optimized network control signal delay between micro-controller and NodeJS server. The idea is to push the control logics as much as it can on the NodeJS server while reserve the signal control on the micro-controller side.
 
