@@ -1,9 +1,9 @@
 Particle Webcontrol with Stepper Motor
 --------------------
 
-Full-stack Particle Microcontroller and a NodeJS Web App in order to control the stepper motor.
+A complete full-stack IoT (Internet-of-Thing) NodeJS Web App with a Particle Microcontroller in order to control the stepper motor.
 
-This simple app serves the purposes and provides abstraction to control stepper motor wirelessly and through a front-end webapp with automation.
+This simple app serves the purposes and provides abstraction to control stepper motor securely direct on the public internet cloud and through a front-end webapp with automation.
 
 Building backend with NodeJS v4.4.1 LTS & ExpressJS + simple front-end with HTML5/CSS/jQuery
 
